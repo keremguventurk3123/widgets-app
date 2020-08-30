@@ -22,8 +22,7 @@ const Search = () => {
                 setResults(data.query.search);
             }
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        if (term && !results.length) {
+        if (term) {
             search();
         } else {
             const timeoutId = setTimeout(() => {
